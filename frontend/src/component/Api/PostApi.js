@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const BasedUrl = 'http://localhost:5000/';
-const addUrl = 'http://localhost:5000/api/posts';
+export const BasedUrl = 'https://blog-app-apibackend.vercel.app/';
+const addUrl = 'https://blog-app-apibackend.vercel.app/api/posts';
 
 export const createPost = (newPost) => axios.post(`${addUrl}/add`, newPost) 
 export const getAllPosts = () => axios.get(`${addUrl}/view`)
